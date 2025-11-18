@@ -1,0 +1,132 @@
+{
+  "extraction_schema": {
+    "demographics": {
+      "age": {
+        "type": "integer",
+        "range": [0, 120],
+        "unit": "years",
+        "required": true
+      },
+      "sex": {
+        "type": "categorical",
+        "values": ["male", "female"],
+        "required": true
+      }
+    },
+    
+    "comorbidities_template_based": {
+      "hypertension": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["HTN", "hypertension", "고혈압"]
+      },
+      "diabetes_mellitus": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["DM", "diabetes", "당뇨"]
+      },
+      "dyslipidemia": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["dyslipidemia", "hyperlipidemia", "고지혈증"]
+      },
+      "atrial_fibrillation": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["AF", "atrial fibrillation", "심방세동"]
+      },
+      "prior_stroke": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["old CVA", "prior stroke", "previous stroke", "과거 뇌졸중"]
+      }
+    },
+    
+    "comorbidities_narrative_based": {
+      "cardiovascular_disease": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["CAD", "MI", "heart disease", "cardiac"]
+      },
+      "malignancy": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["cancer", "malignancy", "tumor", "암"]
+      },
+      "esrd": {
+        "type": "binary",
+        "values": ["yes", "no", "unknown"],
+        "keywords": ["ESRD", "dialysis", "renal failure", "투석"]
+      }
+    },
+    
+    "imaging": {
+      "mri_finding": {
+        "type": "categorical",
+        "values": ["acute_infarction", "no_lesion", "other"],
+        "required": true
+      },
+      "aspect_score": {
+        "type": "integer",
+        "range": [0, 10],
+        "required": true,
+        "source": "OCR"
+      }
+    },
+    
+    "clinical_scores": {
+      "initial_nihss": {
+        "type": "integer",
+        "range": [0, 42],
+        "required": true,
+        "categories": {
+          "0": "no_symptoms",
+          "1-4": "minor_stroke",
+          "5-15": "moderate_stroke",
+          "16-20": "moderate_to_severe",
+          "21-42": "severe_stroke"
+        }
+      }
+    },
+    
+    "interventions": {
+      "iv_tpa": {
+        "type": "binary",
+        "values": ["yes", "no"],
+        "keywords": ["t-PA", "tPA", "alteplase", "thrombolysis"]
+      },
+      "ia_intervention": {
+        "type": "binary",
+        "values": ["yes", "no"],
+        "keywords": ["thrombectomy", "IA", "intra-arterial", "mechanical thrombectomy"]
+      }
+    },
+    
+    "outcome": {
+      "mrs_3month": {
+        "type": "integer",
+        "range": [0, 6],
+        "categories": {
+          "0-2": "good_outcome",
+          "3-6": "poor_outcome"
+        }
+      }
+    }
+  },
+  
+  "abbreviation_expansion": {
+    "HTN": "hypertension",
+    "DM": "diabetes mellitus",
+    "CVA": "cerebrovascular accident",
+    "AF": "atrial fibrillation",
+    "CAD": "coronary artery disease",
+    "MI": "myocardial infarction",
+    "ESRD": "end-stage renal disease",
+    "MRI": "magnetic resonance imaging",
+    "NIHSS": "National Institutes of Health Stroke Scale",
+    "ASPECT": "Alberta Stroke Program Early CT Score",
+    "t-PA": "tissue plasminogen activator",
+    "IA": "intra-arterial",
+    "mRS": "modified Rankin Scale"
+  }
+}
