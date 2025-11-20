@@ -260,22 +260,6 @@ If you use this code or methodology in your research, please cite:
 }
 ```
 
-## 📧 Contact
-
-- **Corresponding Author**: Arom Choi, M.D., Ph.D.
-- **Email**: aromchoi@yuhs.ac
-- **Institution**: Department of Emergency Medicine, Yonsei University College of Medicine
-
-## 📝 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Yonsei University College of Medicine
-- Yonsei Institute for Digital Healthcare
-- IRB approval: 4-2025-0125
-
 ## ⚠️ Disclaimer
 
 This software is intended for research purposes only and has not been approved for clinical use. Healthcare professionals should not rely on this tool for making clinical decisions without proper validation and regulatory approval.
@@ -283,5 +267,3 @@ This software is intended for research purposes only and has not been approved f
 ---
 
 **Keywords**: Electronic Health Records, Small-Scale Language Model, Stroke Outcome Prediction, Privacy-Preserving AI, LoRA, TabPFN, FAISS, RAG
-
-**Last updated**: November 2025
