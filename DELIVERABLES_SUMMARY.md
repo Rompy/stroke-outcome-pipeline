@@ -90,13 +90,11 @@
 
 ### 6. Documentation
 
-- `README.md` (400 lines)
+- `README.md` 
   - Comprehensive overview
   - Installation instructions
   - Usage examples
   - Performance benchmarks
-  - Citation information
-  - Contact details
 
 - `requirements.txt` (30 lines)
   - All Python dependencies
