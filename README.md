@@ -246,20 +246,6 @@ We welcome contributions! Please:
 4. Push to branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-## 📄 Citation
-
-If you use this code or methodology in your research, please cite:
-
-```bibtex
-@article{kim2025stroke,
-  title={End-to-End Pipeline Integrating Local Small-Scale Language Models and Machine Learning for Data Extraction and Stroke Outcome Prediction in Emergency Department},
-  author={Kim, Junsu and Kim, Ji Hoon and Choi, Arom},
-  journal={Computational and Structural Biotechnology Journal},
-  year={2025},
-  publisher={Elsevier}
-}
-```
-
 ## ⚠️ Disclaimer
 
 This software is intended for research purposes only and has not been approved for clinical use. Healthcare professionals should not rely on this tool for making clinical decisions without proper validation and regulatory approval.
